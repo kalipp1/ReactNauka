@@ -5,7 +5,9 @@ const Column = props => {
     return(
         <article className={styles.column}>
             <h1 className={styles.title}><span className={styles.icon + ' fa fa-' + props.icon} />{props.title}</h1>
+            <ul>
             <Card cards = {props.cards} id={props.id} action={props.addCard} />
+            </ul>
         </article>
     )
     

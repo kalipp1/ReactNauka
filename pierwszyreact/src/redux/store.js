@@ -1,14 +1,15 @@
-import { createStore } from 'redux';
+import { createStore, applyMiddleware } from 'redux';
 import initialState from './initialState';
+import { composeWithDevTools } from '@redux-devtools/extension';
 
-const reducer = (state, action) => {
+const reducer = (state) => {
   return state;
 };
 
 const store = createStore(
   reducer,
   initialState,
-  window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  composeWithDevTools()
 );
 
 export default store;

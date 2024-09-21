@@ -8,7 +8,7 @@ const Column = props => {
         <article className={styles.column}>
             <h1 className={styles.title}><span className={styles.icon + ' fa fa-' + props.icon} />{props.title}</h1>
             <ul>
-            <Card cards = {cards} key={cards.id} />    
+                <Card columnId={props.id} cards ={[...cards]} />  
             </ul>
         </article>
     )

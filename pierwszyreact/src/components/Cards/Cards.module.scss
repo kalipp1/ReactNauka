@@ -10,5 +10,18 @@
     display: flex;
     justify-content: space-between;
     font-weight: bold;
-    left: -5%;
+}
+
+.list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.icon {
+    border: none;
+    background-color: $color-light;
+}
+
+.isFavorite {
+    color: rgba(138, 138, 27, 0.947);
 }

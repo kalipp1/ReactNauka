@@ -1,5 +1,5 @@
 import styles from './Column.module.scss';
-import Card from '../Card/Card';
+import Cards from '../Cards/Cards';
 import { useSelector } from 'react-redux';
 import { getFilteredCards } from '../../redux/store';
 
@@ -10,9 +10,7 @@ const Column = props => {
     return(
         <article className={styles.column}>
             <h1 className={styles.title}><span className={styles.icon + ' fa fa-' + props.icon} />{props.title}</h1>
-            <ul>
-                <Card columnId={props.id} cards ={[...cards]} />  
-            </ul>
+                <Cards columnId={props.id} cards ={[...cards]} />  
         </article>
     )
     

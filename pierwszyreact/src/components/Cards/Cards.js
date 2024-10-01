@@ -2,7 +2,7 @@ import styles from './Cards.module.scss';
 import CardForm from '../CardForm/CardForm';
 import clsx from 'clsx';
 import { useDispatch } from 'react-redux';
-import { toggleFavorite } from '../../redux/store';
+import { toggleFavorite } from '../../redux/cardsRedux';
 
 const Cards = props => {
     const dispatch = useDispatch();
